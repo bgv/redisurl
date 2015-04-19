@@ -1,6 +1,6 @@
 # redisurl
 
-Parses a [Redis](http://redis.io/) url and returns result as a struct
+Parses a [Redis](http://redis.io/) url and returns result as a struct [![Build Status](https://travis-ci.org/bgv/redisurl.svg?branch=master)](https://travis-ci.org/bgv/redisurl)
 
 ## Installation
 
