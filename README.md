@@ -30,3 +30,6 @@ url.Password: v3rys3cr37
 url.Db: 5
 url.Hostname: 127.0.0.1:6379
 ```
+
+## License
+The [LICENSE](https://github.com/bgv/redisurl/blob/master/LICENSE.md)
