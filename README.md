@@ -8,7 +8,7 @@ Install redisurl using the "go get" command:
 
     $ go get github.com/bgv/redisurl
 
-The Go distribution is redisul's only dependency.
+The Go distribution is redisurl's only dependency.
 
 ## Usage
 
