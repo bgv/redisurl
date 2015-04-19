@@ -16,6 +16,11 @@ type RedisUrl struct {
 
 func Parse(uriString string) (*RedisUrl, error) {
 
+	// Always try to parse as url
+	if !strings.HasPrefix(uriString, "redis://") {
+		uriString = "redis://" + uriString
+	}
+
 	// Try to parse url and return err with the proper format should be used
 	url, err := url.Parse(uriString)
 
@@ -23,7 +28,7 @@ func Parse(uriString string) (*RedisUrl, error) {
 		return nil, errors.New("redisurl must be in the form redis://[:password@]hostname:port[/db_number]")
 	}
 
-	// Figure Host and Port
+	// Figure out Host and Port
 	parts := strings.Split(url.Host, ":")
 
 	host := parts[0]
