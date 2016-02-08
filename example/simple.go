@@ -10,7 +10,7 @@ func main() {
 	// Parse redis url
 	url, err := redisurl.Parse("redis://:VerySecret@127.0.0.1:6379/5")
 
-    // Check for error
+	// Check for error
 	if err != nil {
 		fmt.Println(err)
 	}
